@@ -1,5 +1,7 @@
 package com.vitor.swing;
 
+import com.vitor.swing.view.MainFrame;
+
 import javax.swing.*;
 
 /**
@@ -10,13 +12,9 @@ public class App
 {
     public static void main( String[] args )
     {
-
         SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("Pedido App");
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setSize(400, 300);
+            MainFrame frame = new MainFrame();
             frame.setVisible(true);
         });
-
     }
 }
